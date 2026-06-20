@@ -1,0 +1,190 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =======================================================
+   1. STICKY NAVIGATION BAR
+   ======================================================= */
+.navbar {
+    position: -webkit-sticky; /* Safari support */
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Stays on top of content when scrolling */
+}
+
+.navbar .logo {
+    color: pink;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+/* display: inline-block keeps list items horizontally aligned */
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* =======================================================
+   2. HERO SECTION (Viewport Height & Width)
+   ======================================================= */
+.hero {
+    height: 100vh; /* Takes full window height */
+    width: 100vw;  /* Takes full window width */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                url('https://static.vecteezy.com/system/resources/previews/031/691/772/non_2x/within-gym-with-modern-fitness-equipment-for-fitness-events-and-more-modern-of-gym-interior-with-equipment-sports-equipment-in-the-gym-created-with-generative-ai-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: pink;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: aqua;
+    margin-bottom: 15px;
+}
+
+/* display: inline-block for structural button rules */
+.cta-btn {
+    display: inline-block;
+    background-color: rgb(25, 149, 211);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* =======================================================
+   DISPLAY PROPERTY & GENERAL LAYOUT
+   ======================================================= */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Block container elements */
+.workout-section, .diet-section, .packages-section {
+    display: block; 
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#First {
+    background-color: #e0f2fe;
+    padding: 15px 30px;
+    border-left: 5px solid blue;
+}
+
+h3 {
+    background-color: rgb(25, 149, 211);
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.diet-lists {
+    display: flex;
+    gap: 20px;
+}
+
+.diet-box {
+    flex: 1;
+    list-style: none;
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.diet-title {
+    font-weight: bold;
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    margin-bottom: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* =======================================================
+   3. OVERFLOW SECTION
+   ======================================================= */
+.overflow-section {
+    display: block;
+    height: 150px;       /* Fixed restrictive height */
+    overflow-y: auto;    /* Activates vertical scrollbar if content exceeds height */
+    background: #ffe4e6; /* light pink background accent */
+    padding: 15px;
+    border: 1px solid pink;
+    border-radius: 6px;
+}
+
+/* =======================================================
+   4. FIXED CONTACT BUTTON
+   ======================================================= */
+.fixed-contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #22c55e; /* Chat Green */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 2000; /* High z-index keeps it over absolutely everything */
+}
+
+
+
+
