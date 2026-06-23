@@ -32,7 +32,7 @@ body {
 }
 
 .navbar .logo {
-    color: pink;
+    color: aqua;
     font-size: 24px;
     font-weight: bold;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar .nav-links a {
-    color: aqua;
+    color: rgba(5, 21, 203, 0.749);
     text-decoration: none;
     font-weight: bold;
 }
@@ -184,7 +184,27 @@ img {
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     z-index: 2000; /* High z-index keeps it over absolutely everything */
 }
-
-
+.card :hover{
+    transform: translateY(-10px);
+}
+.button:hover{
+    background-color: aqua;
+}
+.button{
+    transition: 0.3;
+    transition-duration: 0.6;
+}
+@keyframes float{
+    from{
+        tramsform: translateY
+        (0);
+    }
+    to{
+        transform: translateY (-10px);
+    }
+}
+.card{
+    animation:float 2s infinite alternate;
+}
 
 
