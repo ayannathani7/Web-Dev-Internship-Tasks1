@@ -1,0 +1,52 @@
+.container {
+    background-color: aqua;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    font-size: 50px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
